@@ -1,7 +1,26 @@
 # Achintya Narula Portfolio
 
-Personal portfolio for Achintya Narula, built with Next.js and TypeScript.
+A one-page portfolio for my software, AI/ML, GenAI, and student-community work.
 
-Live site: https://achintya-portfolio-roan.vercel.app
+## Stack
+Next.js, React, TypeScript, CSS, Vitest, Vercel.
 
-The site highlights selected software and AI projects, campus leadership, technical experience, skills, education, and public contact links. It includes accessible navigation, responsive layouts, metadata, Person JSON-LD, an Open Graph image, and a public-safe resume.
+## Local development
+```bash
+npm install
+npm run dev
+```
+
+## Verification
+```bash
+npm run test:run
+npm run typecheck
+npm run lint
+npm run build
+```
+
+## Privacy
+The public site and downloadable resume intentionally omit my phone number and exact location.
+
+## Deployment
+The production site is deployed through Vercel from the `main` branch.
