@@ -1,0 +1,276 @@
+%PDF-1.3
+%ASCII ReportLab Generated PDF document
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 8 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:achintyanarula@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 123.9561 733 224.1703 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula)
+>> /Border [ 0 0 0 ] /Rect [ 230.9431 733 332.8837 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://linkedin.com/in/achintyanarula)
+>> /Border [ 0 0 0 ] /Rect [ 339.6565 733 450.8267 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://achintya-portfolio-roan.vercel.app)
+>> /Border [ 0 0 0 ] /Rect [ 457.5995 733 488.0439 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/placement-tracker)
+>> /Border [ 0 0 0 ] /Rect [ 38 520.9 325.3629 541.15 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/campus-queue)
+>> /Border [ 0 0 0 ] /Rect [ 38 464.6 282.755 484.85 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/claude-genai-lab-assistant)
+>> /Border [ 0 0 0 ] /Rect [ 38 408.3 334.7222 428.55 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R ] /Contents 16 0 R /MediaBox [ 0 0 612 792 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author (Achintya Narula) /CreationDate (D:20260913142623+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20260913142623+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Achintya Narula Resume) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 1 /Kids [ 12 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Length 7429
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.121569 .305882 .47451 rg
+BT /F2 21 Tf 25.2 TL ET
+BT 1 0 0 1 204.5175 752 Tm (ACHINTYA NARULA) Tj T* ET
+BT /F1 8.3 Tf 9.96 TL ET
+.3 .34 .38 rg
+BT 1 0 0 1 123.9561 734 Tm (achintyanarula@gmail.com) Tj T* ET
+BT 1 0 0 1 224.1703 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 230.9431 734 Tm (github.com/Achintya-Narula) Tj T* ET
+BT 1 0 0 1 332.8837 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 339.6565 734 Tm (linkedin.com/in/achintyanarula) Tj T* ET
+BT 1 0 0 1 450.8267 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 457.5995 734 Tm (Portfolio) Tj T* ET
+BT /F2 9.5 Tf 11.4 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 103.7925 722 Tm (SOFTWARE ENGINEERING | BACKEND DEVELOPMENT | JAVA | TYPESCRIPT | NODE.JS) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 703 Tm (PROFILE) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 691 Tm (Final-year B.Tech CSE student with an AI & ML minor targeting software engineering and backend roles. Builds tested REST APIs) Tj T* ET
+BT 1 0 0 1 38 680.1 Tm (and web applications using Java, TypeScript/JavaScript, and Node.js, with hands-on work in authentication, authorization,) Tj T* ET
+BT 1 0 0 1 38 669.2 Tm (concurrency, validation, CI, and automated testing.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 655.1 Tm (EDUCATION) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 643.1 Tm (Shaheed Bhagat Singh State University) Tj T* ET
+BT 1 0 0 1 488.2511 643.1 Tm (Expected May 2027) Tj T* ET
+.1 .1 .1 rg
+BT /F3 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 631.4 Tm (B.Tech, Computer Science and Engineering | Minor: Artificial Intelligence & Machine Learning) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 619.3 Tm (CGPA: 7.53/10 | Relevant Coursework: Data Structures, OOP, Algorithms, DBMS, Operating Systems, Software Engineering) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 605.2 Tm (TECHNICAL SKILLS) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 593.2 Tm (Languages: Java 17, TypeScript/JavaScript, Python, SQL, C++, C) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 581.1 Tm (Backend & Web: Node.js, REST APIs, HTTP/JSON, JWT, JDK HttpServer, HTML/CSS, React; Express and MongoDB exposure) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 569 Tm (Software Engineering: OOP, API design, authentication/authorization, validation, concurrency, error handling, automated testing) Tj T* ET
+.1 .1 .1 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 38 556.9 Tm (Tools & Delivery: Git, GitHub, GitHub Actions, Postman, Docker, CI workflows) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 542.8 Tm (SELECTED PROJECTS) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 530.8 Tm (Placement Tracker | TypeScript, Node.js, REST APIs, HTML, CSS) Tj T* ET
+BT 1 0 0 1 533.4584 530.8 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 519.1 Tm (- Built an authenticated application-tracking REST API and responsive dashboard with CRUD, search/status filters, deadlines,) Tj T* ET
+BT 1 0 0 1 48 508.2 Tm (follow-ups, and per-stage dates.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 496.8 Tm (- Implemented salted scrypt password hashes, expiring HS256 JWTs, owner-scoped authorization, atomic file persistence, and 19) Tj T* ET
+BT 1 0 0 1 48 485.9 Tm (automated tests covering core workflows.) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 474.5 Tm (CampusQueue | Java 17, JDK HttpServer, Concurrency) Tj T* ET
+BT 1 0 0 1 533.4584 474.5 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 462.8 Tm (- Developed a workshop-registration REST API with role validation, duplicate prevention, FIFO waitlisting, automatic promotion after) Tj T* ET
+BT 1 0 0 1 48 451.9 Tm (cancellation, and structured JSON errors.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 440.5 Tm (- Protected capacity and queue updates with a fair per-workshop ReentrantLock; 25-test suite covers 20 registrations across 8 threads) Tj T* ET
+BT 1 0 0 1 48 429.6 Tm (plus real HTTP flows.) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 418.2 Tm (Claude GenAI Lab Assistant | Next.js, TypeScript, Server-side APIs) Tj T* ET
+BT 1 0 0 1 533.4584 418.2 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 406.5 Tm (- Built a Next.js/TypeScript learning application with a server-side API route, local-context loading, request validation, and safe upstream) Tj T* ET
+BT 1 0 0 1 48 395.6 Tm (error handling.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 384.2 Tm (- Separated UI, validation, context loading, prompt construction, and external API adapter layers; 22 automated tests plus CI) Tj T* ET
+BT 1 0 0 1 48 373.3 Tm (type-checking and production build.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 359.9 Tm (EXPERIENCE) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 347.9 Tm (Full-Stack Development Intern | Solitaire Infosys) Tj T* ET
+BT 1 0 0 1 487.2133 347.9 Tm (Jul 2025 - Aug 2025) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 336.2 Tm (- Built and integrated web-development features using React, Node.js, Express, and MongoDB in a collaborative full-stack internship) Tj T* ET
+BT 1 0 0 1 48 325.3 Tm (environment.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 313.9 Tm (- Worked across frontend/backend integration, REST-style request flows, testing, and Git-based collaboration; received the Best Intern) Tj T* ET
+BT 1 0 0 1 48 303 Tm (Award.) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 291.6 Tm (Web Development Intern | ShadowFox) Tj T* ET
+BT 1 0 0 1 484.0904 291.6 Tm (May 2025 - Jun 2025) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 279.9 Tm (- Completed web-development tasks spanning frontend/backend integration, API integration, testing, and Git-based version control.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 268.5 Tm (- Worked with REST/JSON request-response flows and iterative debugging to validate integrations across assigned web-development) Tj T* ET
+BT 1 0 0 1 48 257.6 Tm (tasks.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 244.2 Tm (LEADERSHIP) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 232.2 Tm (Technical Head | Google Developer Groups On Campus, SBSSU) Tj T* ET
+BT 1 0 0 1 489.822 232.2 Tm (Aug 2025 - Present) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 220.5 Tm (- Coordinate developer workshops, hackathons, GenAI labs, participant setup, technical support, and volunteer execution with the) Tj T* ET
+BT 1 0 0 1 48 209.6 Tm (student core team.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 198.2 Tm (- Provide hands-on setup, debugging, and tool support during technical sessions and GenAI labs, helping students resolve environment) Tj T* ET
+BT 1 0 0 1 48 187.3 Tm (and workflow issues.) Tj T* ET
+BT /F2 9.35 Tf 11.22 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 175.9 Tm (STPO Team Member | Shaheed Bhagat Singh State University) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.8 Tf 10.56 TL ET
+BT 1 0 0 1 38 164.2 Tm (- Support placement-related student communication, coordination, and administrative follow-ups alongside the university placement) Tj T* ET
+BT 1 0 0 1 48 153.3 Tm (team.) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000506 00000 n 
+0000000684 00000 n 
+0000000866 00000 n 
+0000001052 00000 n 
+0000001167 00000 n 
+0000001360 00000 n 
+0000001548 00000 n 
+0000001751 00000 n 
+0000002003 00000 n 
+0000002073 00000 n 
+0000002355 00000 n 
+0000002416 00000 n 
+trailer
+<<
+/ID 
+[<679b4b8fb6e0d1e5b4c9aacc3964c096><679b4b8fb6e0d1e5b4c9aacc3964c096>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 17
+>>
+startxref
+9897
+%%EOF
