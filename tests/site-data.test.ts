@@ -14,9 +14,11 @@ describe("public portfolio data", () => {
     expect(site.source).toBe("https://github.com/Achintya-Narula/portfolio");
   });
 
-  it("contains the four verified project repository links", () => {
+  it("contains the verified project repository links", () => {
     expect(projects.map((project) => project.href)).toEqual([
       "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+      "https://github.com/Achintya-Narula/customer-churn-ml",
+      "https://github.com/Achintya-Narula/sales-data-warehouse",
       "https://github.com/Achintya-Narula/issuesense",
       "https://github.com/Achintya-Narula/placement-tracker",
       "https://github.com/Achintya-Narula/campus-queue",

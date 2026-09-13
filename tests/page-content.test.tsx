@@ -1,3 +1,4 @@
+import { expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import Page from "@/app/page";
 
@@ -23,6 +24,16 @@ it("renders all featured projects and their verified repository links", () => {
     "href",
     "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
   );
+  expect(screen.getByRole("heading", { name: "Customer Churn Prediction & Explainability" })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /View Customer Churn Prediction & Explainability on GitHub/i })).toHaveAttribute(
+    "href",
+    "https://github.com/Achintya-Narula/customer-churn-ml",
+  );
+  expect(screen.getByRole("heading", { name: "Sales Analytics & Data Warehouse Pipeline" })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /View Sales Analytics & Data Warehouse Pipeline on GitHub/i })).toHaveAttribute(
+    "href",
+    "https://github.com/Achintya-Narula/sales-data-warehouse",
+  );
   expect(screen.getByRole("heading", { name: "IssueSense" })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: "Placement Tracker" })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: "CampusQueue" })).toBeInTheDocument();
@@ -35,7 +46,7 @@ it("renders the Claude learning modes and architecture flow", () => {
   }
   expect(screen.getByText("Student prompt")).toBeInTheDocument();
   expect(screen.getByText("Mode instructions + lab context")).toBeInTheDocument();
-  expect(screen.getByText("Claude")).toBeInTheDocument();
+  expect(screen.getAllByText("Claude").length).toBeGreaterThan(0);
   expect(screen.getByText("Guided response")).toBeInTheDocument();
 });
 
@@ -43,7 +54,7 @@ it("renders experience, skills, education, and public contact actions", () => {
   render(<Page />);
   expect(screen.getByText("Technical Head")).toBeInTheDocument();
   expect(screen.getByText("Agentic Workflows")).toBeInTheDocument();
-  expect(screen.getByText("7.53 / 10")).toBeInTheDocument();
+  expect(screen.getByText(/7\.53 \/ 10/)).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /email me/i })).toHaveAttribute(
     "href",
     "mailto:achintyanarula@gmail.com",
@@ -61,3 +72,4 @@ it("renders the complete approved project highlights and portfolio source footer
     "https://github.com/Achintya-Narula/portfolio",
   );
 });
+

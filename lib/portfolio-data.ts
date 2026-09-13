@@ -37,6 +37,38 @@ export const projects: readonly Project[] = [
     featured: true,
   },
   {
+    name: "Customer Churn Prediction & Explainability",
+    stack: ["Python", "scikit-learn", "XGBoost", "SHAP", "FastAPI"],
+    summary:
+      "An end-to-end machine learning pipeline comparing Logistic Regression, Random Forest, and XGBoost with leakage-safe preprocessing, SHAP explainability, and containerized FastAPI inference.",
+    highlights: [
+      "Leakage-safe ColumnTransformer preprocessing",
+      "5-fold stratified cross-validation & GridSearchCV",
+      "0.8486 holdout ROC-AUC & 0.6585 PR-AUC with XGBoost",
+      "Out-of-fold threshold tuning & confusion-matrix analysis",
+      "Global SHAP & permutation feature importance",
+      "FastAPI inference service with Docker-ready serving",
+    ],
+    href: "https://github.com/Achintya-Narula/customer-churn-ml",
+    featured: true,
+  },
+  {
+    name: "Sales Analytics & Data Warehouse Pipeline",
+    stack: ["SQL Server", "T-SQL", "Python", "Star Schema", "Power BI"],
+    summary:
+      "A complete dimensional data warehouse with FactSales, Customer/Product/Date dimensions, SCD Type 1 MERGE ETL, and automated Python data-quality validation.",
+    highlights: [
+      "Star schema design with surrogate keys & staging tables",
+      "SCD Type 1 MERGE ETL procedures in T-SQL",
+      "Automated Python quality checks on 5,000 sales transactions",
+      "Referential integrity & amount arithmetic assertions",
+      "Analytical SQL with CTEs, LAG, and ROW_NUMBER",
+      "Power BI-ready DAX measures for MoM revenue metrics",
+    ],
+    href: "https://github.com/Achintya-Narula/sales-data-warehouse",
+    featured: true,
+  },
+  {
     name: "IssueSense",
     stack: ["Python", "scikit-learn", "pandas", "NLP"],
     summary:
@@ -114,9 +146,9 @@ export const experience: readonly ExperienceEntry[] = [
 
 export const skills: readonly SkillGroup[] = [
   { name: "Languages", items: ["Python", "Java", "TypeScript", "JavaScript", "C", "C++", "SQL"] },
-  { name: "AI & Machine Learning", items: ["NLP", "scikit-learn", "TF-IDF", "Classification", "Model Evaluation"] },
-  { name: "AI Development", items: ["Claude", "Prompt Engineering", "Agentic Workflows", "Context-Grounded AI", "AI-Assisted Development"] },
-  { name: "Web & Developer Tools", items: ["Node.js", "REST APIs", "React", "Git", "GitHub", "GitHub Actions", "Postman", "VS Code"] },
+  { name: "AI & Machine Learning", items: ["scikit-learn", "XGBoost", "SHAP", "Model Evaluation", "Cross-Validation", "NLP", "TF-IDF", "Classification"] },
+  { name: "Data Engineering & Analytics", items: ["SQL Server", "T-SQL", "Star Schema", "ETL", "Power BI", "Data Quality", "FastAPI", "Docker"] },
+  { name: "AI Development & Tools", items: ["Claude", "Prompt Engineering", "Agentic Workflows", "Git", "GitHub Actions", "VS Code", "Postman"] },
 ] as const;
 
 export const education = {

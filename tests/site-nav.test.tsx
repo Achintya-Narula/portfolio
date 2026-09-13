@@ -1,3 +1,4 @@
+import { expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { SiteNav } from "@/components/site-nav";
@@ -24,3 +25,4 @@ it("includes a public-safe resume link", () => {
     "/achintya-narula-resume.pdf",
   );
 });
+

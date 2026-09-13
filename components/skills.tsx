@@ -10,7 +10,14 @@ export function Skills() {
           {skills.map((group) => (
             <div className="skill-group" key={group.name}>
               <h3>{group.name}</h3>
-              <p>{group.items.join(" · ")}</p>
+              <p>
+                {group.items.map((item, index) => (
+                  <span key={item}>
+                    <span>{item}</span>
+                    {index < group.items.length - 1 ? " · " : null}
+                  </span>
+                ))}
+              </p>
             </div>
           ))}
         </div>
