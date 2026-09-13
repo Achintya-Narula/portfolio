@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { site } from "@/lib/site";
 
 const navLinks = [
   ["About", "#about"],
@@ -25,7 +24,7 @@ export function SiteNav(): React.ReactElement {
           {navLinks.map(([label, href]) => (
             <a key={href} href={href}>{label}</a>
           ))}
-          <a className="resume-nav-link" href={site.resume}>Resume</a>
+          <a className="resume-nav-link" href="#tracks">Resumes</a>
         </nav>
 
         <button
@@ -47,7 +46,7 @@ export function SiteNav(): React.ReactElement {
               {label}
             </a>
           ))}
-          <a href={site.resume} onClick={() => setMenuOpen(false)}>Resume</a>
+          <a href="#tracks" onClick={() => setMenuOpen(false)}>Resumes</a>
         </nav>
       ) : null}
     </header>

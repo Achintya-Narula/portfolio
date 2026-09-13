@@ -1,0 +1,268 @@
+%PDF-1.3
+%ASCII ReportLab Generated PDF document
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R /F3 8 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:achintyanarula@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 123.9561 733 224.1703 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+5 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula)
+>> /Border [ 0 0 0 ] /Rect [ 230.9431 733 332.8837 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+6 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://linkedin.com/in/achintyanarula)
+>> /Border [ 0 0 0 ] /Rect [ 339.6565 733 450.8267 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+7 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://achintya-portfolio-roan.vercel.app)
+>> /Border [ 0 0 0 ] /Rect [ 457.5995 733 488.0439 743.3 ] /Subtype /Link /Type /Annot
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
+endobj
+9 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/customer-churn-ml)
+>> /Border [ 0 0 0 ] /Rect [ 38 470 398.8518 489.85 ] /Subtype /Link /Type /Annot
+>>
+endobj
+10 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/sales-data-warehouse)
+>> /Border [ 0 0 0 ] /Rect [ 38 393.5 393.237 413.35 ] /Subtype /Link /Type /Annot
+>>
+endobj
+11 0 obj
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Achintya-Narula/issuesense)
+>> /Border [ 0 0 0 ] /Rect [ 38 338.7 364.4602 358.55 ] /Subtype /Link /Type /Annot
+>>
+endobj
+12 0 obj
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R ] /Contents 16 0 R /MediaBox [ 0 0 612 792 ] /Parent 15 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
+endobj
+13 0 obj
+<<
+/PageMode /UseNone /Pages 15 0 R /Type /Catalog
+>>
+endobj
+14 0 obj
+<<
+/Author (Achintya Narula) /CreationDate (D:20260913142623+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20260913142623+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Achintya Narula Resume) /Trapped /False
+>>
+endobj
+15 0 obj
+<<
+/Count 1 /Kids [ 12 0 R ] /Type /Pages
+>>
+endobj
+16 0 obj
+<<
+/Length 7658
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.121569 .305882 .47451 rg
+BT /F2 21 Tf 25.2 TL ET
+BT 1 0 0 1 204.5175 752 Tm (ACHINTYA NARULA) Tj T* ET
+BT /F1 8.3 Tf 9.96 TL ET
+.3 .34 .38 rg
+BT 1 0 0 1 123.9561 734 Tm (achintyanarula@gmail.com) Tj T* ET
+BT 1 0 0 1 224.1703 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 230.9431 734 Tm (github.com/Achintya-Narula) Tj T* ET
+BT 1 0 0 1 332.8837 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 339.6565 734 Tm (linkedin.com/in/achintyanarula) Tj T* ET
+BT 1 0 0 1 450.8267 734 Tm ( | ) Tj T* ET
+BT 1 0 0 1 457.5995 734 Tm (Portfolio) Tj T* ET
+BT /F2 9.5 Tf 11.4 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 167.1432 722 Tm (MACHINE LEARNING | DATA SCIENCE | PYTHON | SQL | NLP) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 703 Tm (PROFILE) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 691 Tm (Final-year B.Tech CSE student with an AI & ML minor focused on applied machine learning, NLP, and data systems. Built end-to-end) Tj T* ET
+BT 1 0 0 1 38 680.4 Tm (ML pipelines with leakage-safe preprocessing, cross-validation, hyperparameter tuning, explainability, API inference, and dimensional) Tj T* ET
+BT 1 0 0 1 38 669.8 Tm (ETL/data-warehouse workflows. Targeting ML engineering, data science, and applied AI/data roles.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 656 Tm (EDUCATION) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 644 Tm (Shaheed Bhagat Singh State University) Tj T* ET
+BT 1 0 0 1 489.1683 644 Tm (Expected May 2027) Tj T* ET
+.1 .1 .1 rg
+BT /F3 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 632.6 Tm (B.Tech, Computer Science and Engineering | Minor: Artificial Intelligence & Machine Learning) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 620.8 Tm (CGPA: 7.53/10 | Relevant Coursework: Artificial Intelligence, Machine Learning, Data Mining & Data Warehousing, DBMS, Algorithms) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 607 Tm (AI / ML & DATA SKILLS) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 595 Tm (Machine Learning: scikit-learn, XGBoost, Logistic Regression, Random Forest, classification, preprocessing pipelines, feature) Tj T* ET
+BT 1 0 0 1 38 584.4 Tm (engineering, 5-fold stratified cross-validation, GridSearchCV) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 572.6 Tm (Evaluation & Explainability: ROC-AUC, PR-AUC, precision, recall, F1, confusion matrices, out-of-fold threshold selection, SHAP,) Tj T* ET
+BT 1 0 0 1 38 562 Tm (permutation importance, leakage prevention) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 550.2 Tm (Python & Data: Python, pandas, NumPy, SQL, T-SQL, Power BI, Joblib; data cleaning, EDA, preprocessing, structured-data workflows,) Tj T* ET
+BT 1 0 0 1 38 539.6 Tm (model serialization) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 527.8 Tm (Data Engineering & Analytics: SQL Server, ETL, staging, star schema, fact/dimension modeling, surrogate keys, Date Dimension, SCD) Tj T* ET
+BT 1 0 0 1 38 517.2 Tm (Type 1 MERGE, CTEs, window functions) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 505.4 Tm (NLP & Deployment: TF-IDF, word/bigram features, text classification, FastAPI, Docker, pytest, REST/JSON, Git/GitHub, GitHub Actions) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 491.6 Tm (SELECTED MACHINE LEARNING & DATA PROJECTS) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 479.6 Tm (Customer Churn Prediction & Explainability | Python, scikit-learn, XGBoost, SHAP) Tj T* ET
+BT 1 0 0 1 533.892 479.6 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 468.2 Tm (- Built an end-to-end ML pipeline on the 7,043-row IBM Telco Customer Churn sample dataset using leakage-safe preprocessing and) Tj T* ET
+BT 1 0 0 1 48 457.6 Tm (training-only 5-fold stratified GridSearchCV across Logistic Regression, Random Forest, and XGBoost.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 446.5 Tm (- Selected XGBoost by cross-validated ROC-AUC and achieved 0.8486 ROC-AUC and 0.6585 PR-AUC on an untouched 25% holdout;) Tj T* ET
+BT 1 0 0 1 48 435.9 Tm (analyzed precision, recall, F1, and confusion-matrix trade-offs.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 424.8 Tm (- Added out-of-fold threshold optimization, SHAP and permutation explainability, Joblib persistence, FastAPI inference, Docker-ready) Tj T* ET
+BT 1 0 0 1 48 414.2 Tm (serving, automated tests, and GitHub Actions CI.) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 403.1 Tm (Sales Analytics & Data Warehouse Pipeline | SQL Server, T-SQL, Python, pandas) Tj T* ET
+BT 1 0 0 1 533.892 403.1 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 391.7 Tm (- Designed an OLTP-to-warehouse flow with staging, FactSales, Customer/Product/Date dimensions, surrogate keys, and SCD Type 1) Tj T* ET
+BT 1 0 0 1 48 381.1 Tm (MERGE ETL in SQL Server.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 370 Tm (- Generated and validated 500 customers, 60 products, and 5,000 sales rows with Python/pandas quality checks; built analytical SQL) Tj T* ET
+BT 1 0 0 1 48 359.4 Tm (using joins, CTEs, LAG, ROW_NUMBER, Power BI-ready metrics, and automated Python/SQL contract checks in CI.) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 348.3 Tm (IssueSense | NLP Text Classification | Python, pandas, scikit-learn, TF-IDF) Tj T* ET
+BT 1 0 0 1 533.892 348.3 Tm (Sep 2026) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 336.9 Tm (- Built a reproducible bug/feature/documentation classifier using TF-IDF word/bigram features and Logistic Regression; achieved 82.6%) Tj T* ET
+BT 1 0 0 1 48 326.3 Tm (accuracy and 82.7% macro-F1 on a stratified holdout.) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 315.2 Tm (- Added per-class metrics, confusion-matrix analysis, confidence-based review routing, Joblib persistence, JSON reports, dataset) Tj T* ET
+BT 1 0 0 1 48 304.6 Tm (validation, and 15 automated tests with GitHub Actions CI.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 291.5 Tm (ADDITIONAL EXPERIENCE) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 279.5 Tm (Full-Stack Development Intern | Solitaire Infosys) Tj T* ET
+BT 1 0 0 1 488.1415 279.5 Tm (Jul 2025 - Aug 2025) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 268.1 Tm (- Built application features and API/data integrations with React, Node.js, Express, and MongoDB in a collaborative development) Tj T* ET
+BT 1 0 0 1 48 257.5 Tm (environment; received the Best Intern Award.) Tj T* ET
+BT /F2 9.25 Tf 11.1 TL ET
+.1 .1 .1 rg
+BT 1 0 0 1 38 246.4 Tm (Web Development Intern | ShadowFox) Tj T* ET
+BT 1 0 0 1 485.052 246.4 Tm (May 2025 - Jun 2025) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.7 Tf 10.44 TL ET
+BT 1 0 0 1 38 235 Tm (- Completed REST API integration, testing, and Git-based development tasks, strengthening practical programming and data-flow) Tj T* ET
+BT 1 0 0 1 48 224.4 Tm (fundamentals.) Tj T* ET
+.121569 .305882 .47451 rg
+BT /F2 10.8 Tf 12.96 TL ET
+BT 1 0 0 1 38 211.3 Tm (CERTIFICATIONS & LEADERSHIP) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 199.3 Tm (Python for Everybody Specialization - University of Michigan | Crash Course on Python - Google | Power BI Fundamentals) Tj T* ET
+.1 .1 .1 rg
+BT /F1 8.9 Tf 10.68 TL ET
+BT 1 0 0 1 38 187.5 Tm (Technical Head, GDG On Campus, SBSSU - organize developer workshops, hackathons, hands-on GenAI labs, and peer-learning) Tj T* ET
+BT 1 0 0 1 38 176.9 Tm (activities.) Tj T* ET
+ 
+endstream
+endobj
+xref
+0 17
+0000000000 65535 f 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000506 00000 n 
+0000000684 00000 n 
+0000000866 00000 n 
+0000001052 00000 n 
+0000001167 00000 n 
+0000001358 00000 n 
+0000001554 00000 n 
+0000001741 00000 n 
+0000001993 00000 n 
+0000002063 00000 n 
+0000002345 00000 n 
+0000002406 00000 n 
+trailer
+<<
+/ID 
+[<f25c899c3bdbb8a175ea6a44bf3bf8d5><f25c899c3bdbb8a175ea6a44bf3bf8d5>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 14 0 R
+/Root 13 0 R
+/Size 17
+>>
+startxref
+10116
+%%EOF

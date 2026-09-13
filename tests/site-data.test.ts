@@ -14,14 +14,19 @@ describe("public portfolio data", () => {
     expect(site.source).toBe("https://github.com/Achintya-Narula/portfolio");
   });
 
+  it("publishes separate public-safe SWE and AI/ML resume paths", () => {
+    expect(site).toHaveProperty("resumes.swe", "/Achintya_Narula_SWE_Resume.pdf");
+    expect(site).toHaveProperty("resumes.aiMl", "/Achintya_Narula_AIML_Resume.pdf");
+  });
+
   it("contains the verified project repository links", () => {
     expect(projects.map((project) => project.href)).toEqual([
-      "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
       "https://github.com/Achintya-Narula/customer-churn-ml",
       "https://github.com/Achintya-Narula/sales-data-warehouse",
       "https://github.com/Achintya-Narula/issuesense",
       "https://github.com/Achintya-Narula/placement-tracker",
       "https://github.com/Achintya-Narula/campus-queue",
+      "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
     ]);
   });
 

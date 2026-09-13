@@ -11,12 +11,12 @@ export function About() {
       <div className="section-shell about-grid">
         <div className="section-copy">
           <p className="section-label mono">ABOUT</p>
-          <h2 id="about-heading">Building, learning, and helping others do both.</h2>
+          <h2 id="about-heading">One foundation, two technical tracks.</h2>
           <p>
-            I am a final-year Computer Science student interested in AI, backend development, developer tools, and practical applications of generative AI. My work ranges from NLP classification and REST APIs to concurrent Java systems and Claude-powered educational tools.
+            I am a final-year Computer Science student building across two complementary areas: software engineering and AI/ML &amp; data. On the software side, I work with Java, TypeScript, Node.js, REST APIs, authentication, concurrency, validation, and automated testing.
           </p>
           <p>
-            I also experiment with agentic workflows, debugging, scripting, prompt design, and AI-assisted software development. I am especially interested in how AI tools can change the way students learn to code, not just what they build.
+            On the AI and data side, I build reproducible machine-learning and NLP workflows, work with SQL and dimensional data systems, and focus on evaluation, explainability, data quality, and practical deployment boundaries.
           </p>
           <p>
             Outside development, I serve as Technical Head of GDG On Campus at SBSSU and contribute to the Student Training &amp; Placement Officer team, where I work on technical mentoring, student coordination, workshops, hackathons, GenAI labs, and other campus activities.

@@ -1,10 +1,12 @@
+export type ProjectTrack = "ai-data" | "software";
+
 export type Project = {
   name: string;
   stack: readonly string[];
   summary: string;
   highlights: readonly string[];
   href: string;
-  featured?: boolean;
+  track: ProjectTrack;
 };
 
 export type ExperienceEntry = {
@@ -21,22 +23,6 @@ export type SkillGroup = {
 
 export const projects: readonly Project[] = [
   {
-    name: "Claude GenAI Lab Assistant",
-    stack: ["Next.js", "TypeScript", "Anthropic API"],
-    summary:
-      "A Claude-powered learning assistant designed for hands-on GenAI education, with Explain, Hint, Debug, and Prompt Coach modes grounded in curated local context.",
-    highlights: [
-      "Anthropic Messages API integration",
-      "Context-grounded responses",
-      "Server-side API key handling",
-      "Input validation and structured error handling",
-      "Explain, Hint, Debug, and Prompt Coach workflows",
-      "Automated tests with Vitest",
-    ],
-    href: "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
-    featured: true,
-  },
-  {
     name: "Customer Churn Prediction & Explainability",
     stack: ["Python", "scikit-learn", "XGBoost", "SHAP", "FastAPI"],
     summary:
@@ -50,7 +36,7 @@ export const projects: readonly Project[] = [
       "FastAPI inference service with Docker-ready serving",
     ],
     href: "https://github.com/Achintya-Narula/customer-churn-ml",
-    featured: true,
+    track: "ai-data",
   },
   {
     name: "Sales Analytics & Data Warehouse Pipeline",
@@ -66,7 +52,7 @@ export const projects: readonly Project[] = [
       "Power BI-ready DAX measures for MoM revenue metrics",
     ],
     href: "https://github.com/Achintya-Narula/sales-data-warehouse",
-    featured: true,
+    track: "ai-data",
   },
   {
     name: "IssueSense",
@@ -81,6 +67,7 @@ export const projects: readonly Project[] = [
       "Automated tests",
     ],
     href: "https://github.com/Achintya-Narula/issuesense",
+    track: "ai-data",
   },
   {
     name: "Placement Tracker",
@@ -96,6 +83,7 @@ export const projects: readonly Project[] = [
       "Automated API tests",
     ],
     href: "https://github.com/Achintya-Narula/placement-tracker",
+    track: "software",
   },
   {
     name: "CampusQueue",
@@ -111,6 +99,23 @@ export const projects: readonly Project[] = [
       "Structured API errors",
     ],
     href: "https://github.com/Achintya-Narula/campus-queue",
+    track: "software",
+  },
+  {
+    name: "Claude GenAI Lab Assistant",
+    stack: ["Next.js", "TypeScript", "Anthropic API"],
+    summary:
+      "A Next.js learning assistant with a server-side API boundary, curated local context, request validation, safe secret handling, and mode-specific educational workflows.",
+    highlights: [
+      "Anthropic Messages API integration",
+      "Context-grounded responses",
+      "Server-side API key handling",
+      "Input validation and structured error handling",
+      "Explain, Hint, Debug, and Prompt Coach workflows",
+      "Automated tests with Vitest",
+    ],
+    href: "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+    track: "software",
   },
 ] as const;
 
@@ -145,10 +150,26 @@ export const experience: readonly ExperienceEntry[] = [
 ] as const;
 
 export const skills: readonly SkillGroup[] = [
-  { name: "Languages", items: ["Python", "Java", "TypeScript", "JavaScript", "C", "C++", "SQL"] },
-  { name: "AI & Machine Learning", items: ["scikit-learn", "XGBoost", "SHAP", "Model Evaluation", "Cross-Validation", "NLP", "TF-IDF", "Classification"] },
-  { name: "Data Engineering & Analytics", items: ["SQL Server", "T-SQL", "Star Schema", "ETL", "Power BI", "Data Quality", "FastAPI", "Docker"] },
-  { name: "AI Development & Tools", items: ["Claude", "Prompt Engineering", "Agentic Workflows", "Git", "GitHub Actions", "VS Code", "Postman"] },
+  {
+    name: "Languages",
+    items: ["Java 17", "TypeScript/JavaScript", "Python", "SQL", "C++", "C"],
+  },
+  {
+    name: "Software & Backend",
+    items: ["Node.js", "REST APIs", "HTTP/JSON", "JWT", "Authentication & Authorization", "JDK HttpServer", "Concurrency", "Automated Testing", "React"],
+  },
+  {
+    name: "AI/ML",
+    items: ["scikit-learn", "XGBoost", "SHAP", "Model Evaluation", "Cross-Validation", "NLP", "TF-IDF", "Classification"],
+  },
+  {
+    name: "Data & Analytics",
+    items: ["SQL Server", "T-SQL", "pandas", "NumPy", "ETL", "Star Schema", "Power BI", "Data Quality"],
+  },
+  {
+    name: "Tools & Deployment",
+    items: ["Git", "GitHub Actions", "Docker", "FastAPI", "Postman", "VS Code"],
+  },
 ] as const;
 
 export const education = {

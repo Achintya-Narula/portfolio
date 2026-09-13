@@ -4,18 +4,18 @@ export function Hero() {
   return (
     <section id="top" className="hero" aria-labelledby="hero-title">
       <div className="section-shell hero-shell">
-        <p className="eyebrow mono">COMPUTER SCIENCE · AI/ML · SOFTWARE DEVELOPMENT</p>
+        <p className="eyebrow mono">SOFTWARE ENGINEERING · AI/ML &amp; DATA</p>
         <h1 id="hero-title">Achintya Narula</h1>
         <p className="hero-statement">
-          I build software, AI tools, and learning experiences around real problems and the people using them.
+          I build backend software, applied ML systems, and practical developer tools.
         </p>
         <p className="hero-support">
-          I am a final-year Computer Science student at Shaheed Bhagat Singh State University with an AI &amp; ML minor. I build practical software and AI projects, experiment with agentic and NLP workflows, and help organize technical communities and hands-on student events.
+          I am a final-year Computer Science student at Shaheed Bhagat Singh State University with an AI &amp; ML minor. My work spans tested Java and TypeScript APIs, machine-learning pipelines, data systems, and hands-on student developer communities.
         </p>
 
         <div className="hero-actions">
           <a className="primary-action" href="#projects">View my work</a>
-          <a className="secondary-action" href={site.resume} download>Download résumé</a>
+          <a className="secondary-action" href="#tracks">Choose a resume</a>
         </div>
 
         <div className="hero-links" aria-label="Contact links">

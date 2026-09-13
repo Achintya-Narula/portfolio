@@ -1,4 +1,5 @@
 import { About } from "@/components/about";
+import { CareerTracks } from "@/components/career-tracks";
 import { Contact } from "@/components/contact";
 import { Education } from "@/components/education";
 import { Experience } from "@/components/experience";
@@ -14,6 +15,7 @@ export default function Page() {
       <SiteNav />
       <main>
         <Hero />
+        <CareerTracks />
         <About />
         <Projects />
         <Experience />

@@ -1,29 +1,34 @@
 import { expect, it } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import Page from "@/app/page";
 
-it("renders Achintya's name", () => {
+it("renders Achintya's name and balanced SWE plus AI positioning", () => {
   render(<Page />);
   expect(screen.getByRole("heading", { name: "Achintya Narula", level: 1 })).toBeInTheDocument();
-});
-
-it("renders the positioning statement and mentoring-focused About copy", () => {
-  render(<Page />);
   expect(
-    screen.getByText(/I build software, AI tools, and learning experiences around real problems/i),
-  ).toBeInTheDocument();
-  expect(
-    screen.getByText(/how AI tools can change the way students learn to code/i),
+    screen.getByText(/I build backend software, applied ML systems, and practical developer tools/i),
   ).toBeInTheDocument();
 });
 
-it("renders all featured projects and their verified repository links", () => {
+it("renders distinct Software Engineering and AI\/ML & Data career tracks with resume downloads", () => {
   render(<Page />);
-  expect(screen.getByRole("heading", { name: "Claude GenAI Lab Assistant" })).toBeInTheDocument();
-  expect(screen.getByRole("link", { name: /View Claude GenAI Lab Assistant on GitHub/i })).toHaveAttribute(
+  const tracks = screen.getByRole("region", { name: /career tracks/i });
+  expect(within(tracks).getByRole("heading", { name: "Software Engineering" })).toBeInTheDocument();
+  expect(within(tracks).getByRole("heading", { name: "AI/ML & Data" })).toBeInTheDocument();
+  expect(within(tracks).getByRole("link", { name: /SWE Resume/i })).toHaveAttribute(
     "href",
-    "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+    "/Achintya_Narula_SWE_Resume.pdf",
   );
+  expect(within(tracks).getByRole("link", { name: /AI\/ML Resume/i })).toHaveAttribute(
+    "href",
+    "/Achintya_Narula_AIML_Resume.pdf",
+  );
+  expect(within(tracks).getByText("Placement Tracker")).toBeInTheDocument();
+  expect(within(tracks).getByText("Customer Churn Prediction & Explainability")).toBeInTheDocument();
+});
+
+it("renders all six projects and their verified repository links", () => {
+  render(<Page />);
   expect(screen.getByRole("heading", { name: "Customer Churn Prediction & Explainability" })).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /View Customer Churn Prediction & Explainability on GitHub/i })).toHaveAttribute(
     "href",
@@ -37,23 +42,25 @@ it("renders all featured projects and their verified repository links", () => {
   expect(screen.getByRole("heading", { name: "IssueSense" })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: "Placement Tracker" })).toBeInTheDocument();
   expect(screen.getByRole("heading", { name: "CampusQueue" })).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: "Claude GenAI Lab Assistant" })).toBeInTheDocument();
+  expect(screen.getByRole("link", { name: /View Claude GenAI Lab Assistant on GitHub/i })).toHaveAttribute(
+    "href",
+    "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+  );
 });
 
-it("renders the Claude learning modes and architecture flow", () => {
+it("groups detailed projects into AI\/ML & Data and Software & Backend sections", () => {
   render(<Page />);
-  for (const mode of ["Explain", "Hint", "Debug", "Prompt Coach"]) {
-    expect(screen.getByText(mode)).toBeInTheDocument();
-  }
-  expect(screen.getByText("Student prompt")).toBeInTheDocument();
-  expect(screen.getByText("Mode instructions + lab context")).toBeInTheDocument();
-  expect(screen.getAllByText("Claude").length).toBeGreaterThan(0);
-  expect(screen.getByText("Guided response")).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: "AI/ML & Data Projects" })).toBeInTheDocument();
+  expect(screen.getByRole("heading", { name: "Software & Backend Projects" })).toBeInTheDocument();
 });
 
-it("renders experience, skills, education, and public contact actions", () => {
+it("renders experience, rebalanced skills, education, and public contact actions", () => {
   render(<Page />);
   expect(screen.getByText("Technical Head")).toBeInTheDocument();
-  expect(screen.getByText("Agentic Workflows")).toBeInTheDocument();
+  expect(screen.getByText("Software & Backend")).toBeInTheDocument();
+  expect(screen.getByText("Data & Analytics")).toBeInTheDocument();
+  expect(screen.queryByText("Agentic Workflows")).not.toBeInTheDocument();
   expect(screen.getByText(/7\.53 \/ 10/)).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /email me/i })).toHaveAttribute(
     "href",
@@ -72,4 +79,3 @@ it("renders the complete approved project highlights and portfolio source footer
     "https://github.com/Achintya-Narula/portfolio",
   );
 });
-
