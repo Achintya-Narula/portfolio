@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, Instrument_Sans } from "next/font/google";
 import { createPersonJsonLd } from "@/lib/structured-data";
 import { site } from "@/lib/site";
 import "./globals.css";
+import "./portfolio-sync.css";
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
