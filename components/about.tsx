@@ -19,7 +19,7 @@ export function About() {
             On the AI and data side, I build reproducible machine-learning and NLP workflows, work with SQL and dimensional data systems, and focus on evaluation, explainability, data quality, and practical deployment boundaries.
           </p>
           <p>
-            Outside development, I serve as Technical Head of GDG On Campus at SBSSU and contribute to the Student Training &amp; Placement Officer team, where I work on technical mentoring, student coordination, workshops, hackathons, GenAI labs, and other campus activities.
+            Outside development, I serve as Technical Head of GDG On Campus at SBSSU, where I work on technical mentoring, workshops, hackathons, GenAI labs, and other campus activities.
           </p>
         </div>
 

@@ -55,9 +55,10 @@ it("groups detailed projects into AI\/ML & Data and Software & Backend sections"
   expect(screen.getByRole("heading", { name: "Software & Backend Projects" })).toBeInTheDocument();
 });
 
-it("renders experience, rebalanced skills, education, and public contact actions", () => {
+it("renders experience, rebalanced skills, education, and public contact actions without STPO", () => {
   render(<Page />);
   expect(screen.getByText("Technical Head")).toBeInTheDocument();
+  expect(screen.queryAllByText(/Student Training & Placement Officer/i)).toHaveLength(0);
   expect(screen.getByText("Software & Backend")).toBeInTheDocument();
   expect(screen.getByText("Data & Analytics")).toBeInTheDocument();
   expect(screen.queryByText("Agentic Workflows")).not.toBeInTheDocument();

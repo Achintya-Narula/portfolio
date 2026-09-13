@@ -128,12 +128,6 @@ export const experience: readonly ExperienceEntry[] = [
       "Help plan and execute developer workshops, hackathons, hands-on GenAI labs, technical sessions, and wider campus activities. Support students with technical setup, debugging, developer tools, and practical AI workflows while coordinating event execution and volunteer activities.",
   },
   {
-    role: "Student Training & Placement Officer Team",
-    organization: "SBSSU",
-    description:
-      "Support placement-related student communication, coordination, and follow-ups.",
-  },
-  {
     role: "Full-Stack Development Intern",
     organization: "Solitaire Infosys",
     dates: "Jul 2025 to Aug 2025",
