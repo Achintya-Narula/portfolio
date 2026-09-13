@@ -1,0 +1,97 @@
+.career-tracks {
+  padding-top: 0;
+}
+
+.track-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.track-card {
+  min-width: 0;
+  padding: clamp(1.5rem, 3vw, 2.15rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 160ms ease;
+}
+
+.track-card > p:not(.track-project-label) {
+  color: var(--muted);
+}
+
+.track-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.55rem, 2.6vw, 2.1rem);
+}
+
+.track-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.35rem 0 1.6rem;
+}
+
+.track-skill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding-inline: 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--background);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.track-project-label {
+  margin-bottom: 0.55rem;
+  color: var(--accent);
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+}
+
+.track-projects {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1.55rem;
+  padding-left: 1.15rem;
+  color: var(--muted);
+}
+
+.track-resume-link {
+  display: inline-flex;
+  min-height: 2.7rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.58rem 0.95rem;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--background);
+  font-weight: 620;
+  text-decoration: none;
+}
+
+.project-group + .project-group {
+  margin-top: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.project-group-heading {
+  margin-bottom: 1.35rem;
+  color: var(--text);
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+}
+
+@media (hover: hover) {
+  .track-card:hover {
+    border-color: #b8b2a7;
+  }
+}
+
+@media (min-width: 800px) {
+  .track-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
