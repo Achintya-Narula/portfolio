@@ -31,7 +31,7 @@ const tracks: readonly {
 
 export function CareerTracks() {
   return (
-    <section id="tracks" className="section career-tracks" aria-labelledby="tracks-heading">
+    <section id="tracks" className="section career-tracks" aria-label="Career tracks">
       <div className="section-shell">
         <p className="section-label mono">CAREER TRACKS</p>
         <h2 id="tracks-heading">Choose the version most relevant to the role.</h2>
