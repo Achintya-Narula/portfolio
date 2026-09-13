@@ -18,11 +18,7 @@ it("opens and closes the mobile navigation", async () => {
   expect(button).toHaveAttribute("aria-expanded", "false");
 });
 
-it("includes a public-safe resume link", () => {
+it("links resume navigation to the career-track chooser", () => {
   render(<SiteNav />);
-  expect(screen.getByRole("link", { name: /resume/i })).toHaveAttribute(
-    "href",
-    "/achintya-narula-resume.pdf",
-  );
+  expect(screen.getByRole("link", { name: /resumes/i })).toHaveAttribute("href", "#tracks");
 });
-
