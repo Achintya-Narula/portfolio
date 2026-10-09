@@ -69,11 +69,18 @@ it("renders experience, rebalanced skills, education, and public contact actions
   );
 });
 
-it("renders the complete approved project highlights and portfolio source footer", () => {
+it("renders the verified CampusQueue v2 stack and evidence without the retired prototype stack", () => {
   render(<Page />);
   expect(screen.getByText("Filtering and stage tracking")).toBeInTheDocument();
-  expect(screen.getByText("Role validation")).toBeInTheDocument();
+  expect(screen.getByText("JWT/BCrypt authentication with role and owner authorization")).toBeInTheDocument();
+  expect(screen.getByText("PostgreSQL pessimistic locking for capacity-safe enrollment")).toBeInTheDocument();
+  expect(screen.getByText("28 integration tests with PostgreSQL Testcontainers")).toBeInTheDocument();
   expect(screen.getByText("Structured API errors")).toBeInTheDocument();
+  expect(screen.queryByText("JDK HttpServer")).not.toBeInTheDocument();
+});
+
+it("renders the portfolio source footer", () => {
+  render(<Page />);
   expect(screen.getByText("Built with Next.js")).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /source on github/i })).toHaveAttribute(
     "href",
