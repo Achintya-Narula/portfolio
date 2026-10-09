@@ -87,15 +87,15 @@ export const projects: readonly Project[] = [
   },
   {
     name: "CampusQueue",
-    stack: ["Java 17", "JDK HttpServer", "Concurrency"],
+    stack: ["Java 17", "Spring Boot", "PostgreSQL", "Spring Security", "JPA", "Flyway", "Docker"],
     summary:
-      "A workshop registration and waitlist system designed around concurrency-safe enrollment.",
+      "A Spring Boot workshop-registration API with JWT-secured role workflows and transaction-safe capacity management backed by PostgreSQL.",
     highlights: [
-      "FIFO waitlist",
-      "Automatic promotion when seats become available",
-      "Duplicate registration prevention",
-      "Role validation",
-      "Concurrent registration handling",
+      "JWT/BCrypt authentication with role and owner authorization",
+      "PostgreSQL pessimistic locking for capacity-safe enrollment",
+      "FIFO waitlisting and automatic promotion after cancellation",
+      "Search, pagination, and OpenAPI documentation",
+      "28 integration tests with PostgreSQL Testcontainers",
       "Structured API errors",
     ],
     href: "https://github.com/Achintya-Narula/campus-queue",
@@ -150,7 +150,7 @@ export const skills: readonly SkillGroup[] = [
   },
   {
     name: "Software & Backend",
-    items: ["Node.js", "REST APIs", "HTTP/JSON", "JWT", "Authentication & Authorization", "JDK HttpServer", "Concurrency", "Automated Testing", "React"],
+    items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Node.js", "REST APIs", "HTTP/JSON", "JWT", "Authentication & Authorization", "PostgreSQL", "Concurrency", "Automated Testing", "React"],
   },
   {
     name: "AI/ML",
@@ -162,7 +162,7 @@ export const skills: readonly SkillGroup[] = [
   },
   {
     name: "Tools & Deployment",
-    items: ["Git", "GitHub Actions", "Docker", "FastAPI", "Postman", "VS Code"],
+    items: ["Git", "GitHub Actions", "Docker", "Testcontainers", "Flyway", "OpenAPI/Swagger", "FastAPI", "Postman", "VS Code"],
   },
 ] as const;
 
