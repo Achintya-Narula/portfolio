@@ -11,15 +11,26 @@ export function About() {
       <div className="section-shell about-grid">
         <div className="section-copy">
           <p className="section-label mono">ABOUT</p>
-          <h2 id="about-heading">One foundation, two technical tracks.</h2>
+          <h2 id="about-heading">I want to understand why a system behaves the way it does.</h2>
           <p>
-            I am a final-year Computer Science student building across two complementary areas: software engineering and AI/ML &amp; data. On the software side, I work with Java, TypeScript, Node.js, REST APIs, authentication, concurrency, validation, and automated testing.
+            I usually begin with the simplest plausible cause, try reversible fixes, and keep
+            track of what changed. If the usual fixes fail, I look for comparable cases and
+            official documentation before changing more of the system.
           </p>
           <p>
-            On the AI and data side, I build reproducible machine-learning and NLP workflows, work with SQL and dimensional data systems, and focus on evaluation, explainability, data quality, and practical deployment boundaries.
+            When a Linux setup with NVIDIA graphics kept failing, I worked through driver and
+            configuration changes for several days and recovered part of the setup. I still could
+            not prove the original cause, so I returned to Windows instead of calling a partial
+            fix complete.
           </p>
           <p>
-            Outside development, I serve as Technical Head of GDG On Campus at SBSSU, where I work on technical mentoring, workshops, hackathons, GenAI labs, and other campus activities.
+            That approach carries into my projects. I include tests and reproducible checks where
+            they add evidence, and I write down the limits I would address before treating a
+            student project as a production system.
+          </p>
+          <p>
+            I also serve as Technical Head of GDG On Campus at SBSSU, where I help run workshops,
+            hackathons, GenAI labs, and technical support for students.
           </p>
         </div>
 

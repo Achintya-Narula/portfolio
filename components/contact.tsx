@@ -11,8 +11,8 @@ export function Contact() {
         </p>
         <div className="contact-links">
           <a href={site.emailHref}>Email me</a>
-          <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a href={site.github} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
