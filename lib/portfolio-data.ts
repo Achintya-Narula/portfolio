@@ -1,11 +1,19 @@
 export type ProjectTrack = "ai-data" | "software";
 
+export type ProjectLink = {
+  label: string;
+  href: string;
+  kind: "source" | "tests" | "docs" | "demo";
+};
+
 export type Project = {
   name: string;
   stack: readonly string[];
-  summary: string;
-  highlights: readonly string[];
-  href: string;
+  motivation: string;
+  implementation: string;
+  evidence: readonly string[];
+  limitation: string;
+  links: readonly ProjectLink[];
   track: ProjectTrack;
 };
 
@@ -25,96 +33,163 @@ export const projects: readonly Project[] = [
   {
     name: "Customer Churn Prediction & Explainability",
     stack: ["Python", "scikit-learn", "XGBoost", "SHAP", "FastAPI"],
-    summary:
-      "An end-to-end machine learning pipeline comparing Logistic Regression, Random Forest, and XGBoost with leakage-safe preprocessing, SHAP explainability, and containerized FastAPI inference.",
-    highlights: [
-      "Leakage-safe ColumnTransformer preprocessing",
-      "5-fold stratified cross-validation & GridSearchCV",
-      "0.8486 holdout ROC-AUC & 0.6585 PR-AUC with XGBoost",
-      "Out-of-fold threshold tuning & confusion-matrix analysis",
-      "Global SHAP & permutation feature importance",
-      "FastAPI inference service with Docker-ready serving",
+    motivation:
+      "Work through a complete tabular ML problem without using the holdout set to choose the model.",
+    implementation:
+      "A leakage-safe preprocessing and XGBoost pipeline with cross-validation, SHAP analysis, serialized inference, FastAPI, and Docker.",
+    evidence: [
+      "Selected XGBoost by five-fold training cross-validation and reached 0.8486 ROC-AUC on an untouched 1,761-row holdout.",
+      "Pytest covers the training, serialization, inference, and API boundaries in CI.",
     ],
-    href: "https://github.com/Achintya-Narula/customer-churn-ml",
+    limitation:
+      "The benchmark uses IBM's public 7,043-row sample, and a real retention threshold would require business costs and calibrated probabilities.",
+    links: [
+      {
+        label: "Customer Churn source",
+        href: "https://github.com/Achintya-Narula/customer-churn-ml",
+        kind: "source",
+      },
+      {
+        label: "Customer Churn test evidence",
+        href: "https://github.com/Achintya-Narula/customer-churn-ml/tree/main/tests",
+        kind: "tests",
+      },
+    ],
     track: "ai-data",
   },
   {
     name: "Sales Analytics & Data Warehouse Pipeline",
     stack: ["SQL Server", "T-SQL", "Python", "Star Schema", "Power BI"],
-    summary:
-      "A complete dimensional data warehouse with FactSales, Customer/Product/Date dimensions, SCD Type 1 MERGE ETL, and automated Python data-quality validation.",
-    highlights: [
-      "Star schema design with surrogate keys & staging tables",
-      "SCD Type 1 MERGE ETL procedures in T-SQL",
-      "Automated Python quality checks on 5,000 sales transactions",
-      "Referential integrity & amount arithmetic assertions",
-      "Analytical SQL with CTEs, LAG, and ROW_NUMBER",
-      "Power BI-ready DAX measures for MoM revenue metrics",
+    motivation:
+      "Learn what happens before analytics begins: repeatable inputs, rejected records, dimensional modelling, safe change loading, and rerun checks.",
+    implementation:
+      "A SQL Server star schema with deterministic Python data, SCD Type 1 loading, data-quality validation, analytical SQL, and DAX measures.",
+    evidence: [
+      "The integration run proves 500 initial customers, 30 first-pass updates, zero repeated updates, no duplicate identifiers, and 5,000 fact rows.",
+      "GitHub Actions executes Python checks and the full scenario against a pinned SQL Server container.",
     ],
-    href: "https://github.com/Achintya-Narula/sales-data-warehouse",
+    limitation:
+      "SCD Type 1 does not preserve history, and MERGE is used only for a controlled single-writer batch demonstration.",
+    links: [
+      {
+        label: "Sales Data Warehouse source",
+        href: "https://github.com/Achintya-Narula/sales-data-warehouse",
+        kind: "source",
+      },
+      {
+        label: "Sales Data Warehouse workflow",
+        href: "https://github.com/Achintya-Narula/sales-data-warehouse/actions",
+        kind: "tests",
+      },
+    ],
     track: "ai-data",
   },
   {
     name: "IssueSense",
     stack: ["Python", "scikit-learn", "pandas", "NLP"],
-    summary:
-      "A text-classification tool for categorizing software issues as bugs, feature requests, or documentation tasks using TF-IDF features and logistic regression.",
-    highlights: [
-      "Word and bigram TF-IDF features",
-      "Confidence-based review flagging",
-      "Per-class performance reporting",
-      "Joblib model persistence",
-      "Automated tests",
+    motivation:
+      "Explore a small, reproducible text-classification workflow that can defer uncertain predictions instead of hiding them.",
+    implementation:
+      "A TF-IDF and logistic-regression pipeline for bug, feature, and documentation labels with confidence-based review routing.",
+    evidence: [
+      "The fixed 90-row demo dataset produces 82.6% accuracy and 82.7% macro-F1 on a stratified 23-row holdout.",
+      "Fifteen tests cover loading, training, persistence, evaluation, and command-line behavior.",
     ],
-    href: "https://github.com/Achintya-Narula/issuesense",
+    limitation:
+      "The included examples are curated demo data, so the reported holdout score is evidence of reproducibility rather than production accuracy.",
+    links: [
+      {
+        label: "IssueSense source",
+        href: "https://github.com/Achintya-Narula/issuesense",
+        kind: "source",
+      },
+      {
+        label: "IssueSense tests",
+        href: "https://github.com/Achintya-Narula/issuesense/tree/main/tests",
+        kind: "tests",
+      },
+    ],
     track: "ai-data",
   },
   {
     name: "Placement Tracker",
     stack: ["TypeScript", "Node.js", "REST APIs"],
-    summary:
-      "An authenticated placement-management system for tracking applications, deadlines, follow-ups, notes, and recruitment stages.",
-    highlights: [
-      "JWT authentication",
-      "Secure password hashing",
-      "User-scoped application data",
-      "Filtering and stage tracking",
-      "Idempotent reminder handling",
-      "Automated API tests",
+    motivation:
+      "Keep application stages, deadlines, follow-ups, and notes in one private workflow while preparing for placements.",
+    implementation:
+      "A TypeScript and Node.js tracker with owner-scoped REST endpoints, scrypt password hashing, JWT sessions, editable timelines, and atomic JSON persistence.",
+    evidence: [
+      "The 22-test suite covers ownership, workflow validation, rescheduling, reminder idempotency, HTTP errors, and static-file traversal protection.",
+      "The browser workflow supports create, edit, search, filtering, notes, stage dates, deadlines, and follow-up changes.",
     ],
-    href: "https://github.com/Achintya-Narula/placement-tracker",
+    limitation:
+      "The JSON store is suitable for a single-process MVP, not a multi-instance service; a production version would use PostgreSQL and a durable job queue.",
+    links: [
+      {
+        label: "Placement Tracker source",
+        href: "https://github.com/Achintya-Narula/placement-tracker",
+        kind: "source",
+      },
+      {
+        label: "Placement Tracker tests",
+        href: "https://github.com/Achintya-Narula/placement-tracker/tree/main/tests",
+        kind: "tests",
+      },
+    ],
     track: "software",
   },
   {
     name: "CampusQueue",
-    stack: ["Java 17", "Spring Boot", "PostgreSQL", "Spring Security", "JPA", "Flyway", "Docker"],
-    summary:
-      "A Spring Boot workshop-registration API with JWT-secured role workflows and transaction-safe capacity management backed by PostgreSQL.",
-    highlights: [
-      "JWT/BCrypt authentication with role and owner authorization",
-      "PostgreSQL pessimistic locking for capacity-safe enrollment",
-      "FIFO waitlisting and automatic promotion after cancellation",
-      "Search, pagination, and OpenAPI documentation",
-      "28 integration tests with PostgreSQL Testcontainers",
-      "Structured API errors",
+    stack: ["Java 17", "Spring Boot", "PostgreSQL", "Testcontainers"],
+    motivation:
+      "Handle limited workshop capacity without overbooking when several students register at the same time.",
+    implementation:
+      "A Spring Boot and PostgreSQL API with JWT security, role-scoped workshop workflows, pessimistic row locking, FIFO waitlisting, and automatic promotion.",
+    evidence: [
+      "Twenty students across eight threads consistently finish as exactly 3 confirmed and 17 waitlisted for a capacity-three workshop.",
+      "Twenty-eight integration tests run against a real PostgreSQL Testcontainer in GitHub Actions.",
     ],
-    href: "https://github.com/Achintya-Narula/campus-queue",
+    limitation:
+      "The API has no refresh-token flow, rate limiting, notifications, attendance tracking, or hosted deployment.",
+    links: [
+      {
+        label: "CampusQueue source",
+        href: "https://github.com/Achintya-Narula/campus-queue",
+        kind: "source",
+      },
+      {
+        label: "CampusQueue workflow",
+        href: "https://github.com/Achintya-Narula/campus-queue/actions",
+        kind: "tests",
+      },
+    ],
     track: "software",
   },
   {
     name: "Claude GenAI Lab Assistant",
     stack: ["Next.js", "TypeScript", "Anthropic API"],
-    summary:
-      "A Next.js learning assistant with a server-side API boundary, curated local context, request validation, safe secret handling, and mode-specific educational workflows.",
-    highlights: [
-      "Anthropic Messages API integration",
-      "Context-grounded responses",
-      "Server-side API key handling",
-      "Input validation and structured error handling",
-      "Explain, Hint, Debug, and Prompt Coach workflows",
-      "Automated tests with Vitest",
+    motivation:
+      "Turn a small set of campus GenAI lab notes into guided explanations, hints, debugging help, and prompt feedback.",
+    implementation:
+      "A Next.js assistant with four learning modes, curated local context, server-only API key handling, request validation, and safe error responses.",
+    evidence: [
+      "Vitest covers request validation, context selection, prompt construction, and API-route behavior.",
+      "Retrieved lab text is marked as reference material rather than trusted instructions before it reaches the model prompt.",
     ],
-    href: "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+    limitation:
+      "It uses three curated local files and intentionally avoids a vector database; live answers also require an Anthropic API key.",
+    links: [
+      {
+        label: "Claude GenAI Lab Assistant source",
+        href: "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
+        kind: "source",
+      },
+      {
+        label: "Claude GenAI Lab Assistant tests",
+        href: "https://github.com/Achintya-Narula/claude-genai-lab-assistant/tree/main/tests",
+        kind: "tests",
+      },
+    ],
     track: "software",
   },
 ] as const;
@@ -150,7 +225,7 @@ export const skills: readonly SkillGroup[] = [
   },
   {
     name: "Software & Backend",
-    items: ["Spring Boot", "Spring Security", "Spring Data JPA", "Node.js", "REST APIs", "HTTP/JSON", "JWT", "Authentication & Authorization", "PostgreSQL", "Concurrency", "Automated Testing", "React"],
+    items: ["Node.js", "REST APIs", "HTTP/JSON", "JWT", "Authentication & Authorization", "JDK HttpServer", "Concurrency", "Automated Testing", "React"],
   },
   {
     name: "AI/ML",
@@ -162,7 +237,7 @@ export const skills: readonly SkillGroup[] = [
   },
   {
     name: "Tools & Deployment",
-    items: ["Git", "GitHub Actions", "Docker", "Testcontainers", "Flyway", "OpenAPI/Swagger", "FastAPI", "Postman", "VS Code"],
+    items: ["Git", "GitHub Actions", "Docker", "FastAPI", "Postman", "VS Code"],
   },
 ] as const;
 
