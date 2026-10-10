@@ -19,8 +19,25 @@ describe("public portfolio data", () => {
     expect(site).toHaveProperty("resumes.aiMl", "/Achintya_Narula_AIML_Resume.pdf");
   });
 
+  it("models every project as a verifiable case note", () => {
+    for (const project of projects) {
+      expect(project.motivation.trim()).not.toBe("");
+      expect(project.implementation.trim()).not.toBe("");
+      expect(project.evidence.length).toBeGreaterThanOrEqual(1);
+      expect(project.evidence.length).toBeLessThanOrEqual(2);
+      expect(project.evidence.every((item) => item.trim().length > 0)).toBe(true);
+      expect(project.limitation.trim()).not.toBe("");
+
+      const sourceLinks = project.links.filter((link) => link.kind === "source");
+      expect(sourceLinks).toHaveLength(1);
+      expect(project.links.every((link) => URL.canParse(link.href))).toBe(true);
+      expect(project.links.every((link) => new URL(link.href).protocol === "https:")).toBe(true);
+      expect(project.links.some((link) => link.kind === "demo")).toBe(false);
+    }
+  });
+
   it("contains the verified project repository links", () => {
-    expect(projects.map((project) => project.href)).toEqual([
+    expect(projects.map((project) => project.links.find((link) => link.kind === "source")?.href)).toEqual([
       "https://github.com/Achintya-Narula/customer-churn-ml",
       "https://github.com/Achintya-Narula/sales-data-warehouse",
       "https://github.com/Achintya-Narula/issuesense",
@@ -28,6 +45,16 @@ describe("public portfolio data", () => {
       "https://github.com/Achintya-Narula/campus-queue",
       "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
     ]);
+  });
+
+  it("links the warehouse case note to the verified public repository", () => {
+    const warehouse = projects.find((project) => project.name === "Sales Analytics & Data Warehouse Pipeline");
+
+    expect(warehouse?.links).toContainEqual({
+      label: "Sales Data Warehouse source",
+      href: "https://github.com/Achintya-Narula/sales-data-warehouse",
+      kind: "source",
+    });
   });
 
   it("does not expose phone-like public contact data", () => {

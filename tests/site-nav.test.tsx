@@ -2,6 +2,7 @@ import { expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { SiteNav } from "@/components/site-nav";
+import { CareerTracks } from "@/components/career-tracks";
 
 it("opens and closes the mobile navigation", async () => {
   const user = userEvent.setup();
@@ -21,4 +22,17 @@ it("opens and closes the mobile navigation", async () => {
 it("links resume navigation to the career-track chooser", () => {
   render(<SiteNav />);
   expect(screen.getByRole("link", { name: /resumes/i })).toHaveAttribute("href", "#tracks");
+});
+
+it("keeps both role-specific resume downloads in keyboard order", async () => {
+  const user = userEvent.setup();
+  render(<CareerTracks />);
+
+  const softwareResume = screen.getByRole("link", { name: "Download Software Engineering resume" });
+  const aiResume = screen.getByRole("link", { name: "Download AI/ML and Data resume" });
+
+  await user.tab();
+  expect(softwareResume).toHaveFocus();
+  await user.tab();
+  expect(aiResume).toHaveFocus();
 });
