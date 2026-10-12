@@ -1,13 +1,28 @@
 import { expect, it } from "vitest";
 import { render, screen, within } from "@testing-library/react";
 import Page from "@/app/page";
+import { projects } from "@/lib/portfolio-data";
 
 it("renders Achintya's name and balanced SWE plus AI positioning", () => {
   render(<Page />);
   expect(screen.getByRole("heading", { name: "Achintya Narula", level: 1 })).toBeInTheDocument();
   expect(
-    screen.getByText(/I build backend software, applied ML systems, and practical developer tools/i),
+    screen.getByText(/I build backend systems, applied ML workflows, and data tools/i),
   ).toBeInTheDocument();
+  expect(screen.getByText(/test the parts that matter and state what each project cannot yet do/i)).toBeInTheDocument();
+  expect(screen.getByText(/internships starting in January 2027/i)).toBeInTheDocument();
+});
+
+it("describes a cautious troubleshooting process without overstating the outcome", () => {
+  render(<Page />);
+  const about = screen.getByRole("region", {
+    name: /I want to understand why a system behaves the way it does/i,
+  });
+
+  expect(within(about).getByText(/begin with the simplest plausible cause/i)).toBeInTheDocument();
+  expect(within(about).getByText(/Linux setup with NVIDIA graphics/i)).toBeInTheDocument();
+  expect(within(about).getByText(/could not prove the original cause/i)).toBeInTheDocument();
+  expect(within(about).getByText(/instead of calling a partial fix complete/i)).toBeInTheDocument();
 });
 
 it("renders distinct Software Engineering and AI\/ML & Data career tracks with resume downloads", () => {
@@ -15,11 +30,11 @@ it("renders distinct Software Engineering and AI\/ML & Data career tracks with r
   const tracks = screen.getByRole("region", { name: /career tracks/i });
   expect(within(tracks).getByRole("heading", { name: "Software Engineering" })).toBeInTheDocument();
   expect(within(tracks).getByRole("heading", { name: "AI/ML & Data" })).toBeInTheDocument();
-  expect(within(tracks).getByRole("link", { name: /SWE Resume/i })).toHaveAttribute(
+  expect(within(tracks).getByRole("link", { name: "Download Software Engineering resume" })).toHaveAttribute(
     "href",
     "/Achintya_Narula_SWE_Resume.pdf",
   );
-  expect(within(tracks).getByRole("link", { name: /AI\/ML Resume/i })).toHaveAttribute(
+  expect(within(tracks).getByRole("link", { name: "Download AI/ML and Data resume" })).toHaveAttribute(
     "href",
     "/Achintya_Narula_AIML_Resume.pdf",
   );
@@ -27,26 +42,27 @@ it("renders distinct Software Engineering and AI\/ML & Data career tracks with r
   expect(within(tracks).getByText("Customer Churn Prediction & Explainability")).toBeInTheDocument();
 });
 
-it("renders all six projects and their verified repository links", () => {
+it("renders every project as a semantic evidence case note", () => {
   render(<Page />);
-  expect(screen.getByRole("heading", { name: "Customer Churn Prediction & Explainability" })).toBeInTheDocument();
-  expect(screen.getByRole("link", { name: /View Customer Churn Prediction & Explainability on GitHub/i })).toHaveAttribute(
-    "href",
-    "https://github.com/Achintya-Narula/customer-churn-ml",
-  );
-  expect(screen.getByRole("heading", { name: "Sales Analytics & Data Warehouse Pipeline" })).toBeInTheDocument();
-  expect(screen.getByRole("link", { name: /View Sales Analytics & Data Warehouse Pipeline on GitHub/i })).toHaveAttribute(
-    "href",
-    "https://github.com/Achintya-Narula/sales-data-warehouse",
-  );
-  expect(screen.getByRole("heading", { name: "IssueSense" })).toBeInTheDocument();
-  expect(screen.getByRole("heading", { name: "Placement Tracker" })).toBeInTheDocument();
-  expect(screen.getByRole("heading", { name: "CampusQueue" })).toBeInTheDocument();
-  expect(screen.getByRole("heading", { name: "Claude GenAI Lab Assistant" })).toBeInTheDocument();
-  expect(screen.getByRole("link", { name: /View Claude GenAI Lab Assistant on GitHub/i })).toHaveAttribute(
-    "href",
-    "https://github.com/Achintya-Narula/claude-genai-lab-assistant",
-  );
+  const projectSection = screen.getByRole("region", { name: "Selected projects" });
+  expect(within(projectSection).getAllByRole("article")).toHaveLength(projects.length);
+
+  for (const project of projects) {
+    const heading = within(projectSection).getByRole("heading", { name: project.name });
+    const article = heading.closest("article");
+    expect(article).not.toBeNull();
+
+    const caseNote = within(article as HTMLElement);
+    expect(caseNote.getByText(project.motivation)).toBeInTheDocument();
+    expect(caseNote.getByText(project.implementation)).toBeInTheDocument();
+    expect(caseNote.getByRole("list", { name: `${project.name} evidence` })).toBeInTheDocument();
+    expect(caseNote.getByLabelText(`${project.name} limitation`)).toHaveTextContent(project.limitation);
+
+    const source = project.links.find((link) => link.kind === "source");
+    expect(caseNote.getByRole("link", { name: source?.label })).toHaveAttribute("href", source?.href);
+  }
+
+  expect(within(projectSection).queryByText("↗")).not.toBeInTheDocument();
 });
 
 it("groups detailed projects into AI\/ML & Data and Software & Backend sections", () => {
@@ -69,21 +85,29 @@ it("renders experience, rebalanced skills, education, and public contact actions
   );
 });
 
-it("renders the verified CampusQueue v2 stack and evidence without the retired prototype stack", () => {
+it("renders project decisions and the portfolio source footer", () => {
   render(<Page />);
-  expect(screen.getByText("Filtering and stage tracking")).toBeInTheDocument();
-  expect(screen.getByText("JWT/BCrypt authentication with role and owner authorization")).toBeInTheDocument();
-  expect(screen.getByText("PostgreSQL pessimistic locking for capacity-safe enrollment")).toBeInTheDocument();
-  expect(screen.getByText("28 integration tests with PostgreSQL Testcontainers")).toBeInTheDocument();
-  expect(screen.getByText("Structured API errors")).toBeInTheDocument();
-  expect(screen.queryByText("JDK HttpServer")).not.toBeInTheDocument();
-});
-
-it("renders the portfolio source footer", () => {
-  render(<Page />);
+  expect(screen.getByText(/22-test suite covers ownership/i)).toBeInTheDocument();
+  expect(screen.getByText(/Twenty students across eight threads/i)).toBeInTheDocument();
+  expect(screen.getByText(/SCD Type 1 does not preserve history/i)).toBeInTheDocument();
   expect(screen.getByText("Built with Next.js")).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /source on github/i })).toHaveAttribute(
     "href",
     "https://github.com/Achintya-Narula/portfolio",
   );
+});
+
+it("states the site's limited privacy claim accurately", () => {
+  render(<Page />);
+  const footer = screen.getByRole("contentinfo");
+
+  expect(within(footer).getByText(
+    /uses email links instead of a contact form and does not intentionally run behavioural analytics/i,
+  )).toBeInTheDocument();
+  expect(footer).not.toHaveTextContent(/Vercel (?:receives|collects|stores) no/i);
+});
+
+it("uses text labels instead of decorative external-link arrows", () => {
+  render(<Page />);
+  expect(screen.queryByText("↗")).not.toBeInTheDocument();
 });

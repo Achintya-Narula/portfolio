@@ -7,10 +7,14 @@ export function Hero() {
         <p className="eyebrow mono">SOFTWARE ENGINEERING · AI/ML &amp; DATA</p>
         <h1 id="hero-title">Achintya Narula</h1>
         <p className="hero-statement">
-          I build backend software, applied ML systems, and practical developer tools.
+          I build backend systems, applied ML workflows, and data tools. I test the parts that
+          matter and state what each project cannot yet do.
         </p>
         <p className="hero-support">
-          I am a final-year Computer Science student at Shaheed Bhagat Singh State University with an AI &amp; ML minor. My work spans tested Java and TypeScript APIs, machine-learning pipelines, data systems, and hands-on student developer communities.
+          I am a final-year Computer Science student at Shaheed Bhagat Singh State University with
+          an AI &amp; ML minor. I work mainly with Java, TypeScript, Python, and SQL, and I am
+          looking for software engineering, backend, and applied AI/ML internships starting in
+          January 2027.
         </p>
 
         <div className="hero-actions">
@@ -19,8 +23,8 @@ export function Hero() {
         </div>
 
         <div className="hero-links" aria-label="Contact links">
-          <a href={site.github} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
+          <a href={site.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
           <a href={site.emailHref}>Email</a>
         </div>
       </div>

@@ -16,7 +16,7 @@ const tracks: readonly {
       "Backend systems, APIs, authentication, concurrency, testing, and practical web software.",
     skills: ["Java 17", "TypeScript/JavaScript", "Node.js", "REST APIs", "GitHub Actions"],
     resumeHref: site.resumes.swe,
-    resumeLabel: "SWE Resume",
+    resumeLabel: "Download Software Engineering resume",
   },
   {
     key: "ai-data",
@@ -25,7 +25,7 @@ const tracks: readonly {
       "Applied machine learning, NLP, data engineering, model evaluation, and explainability workflows.",
     skills: ["Python", "SQL", "scikit-learn", "XGBoost", "SHAP", "Power BI"],
     resumeHref: site.resumes.aiMl,
-    resumeLabel: "AI/ML Resume",
+    resumeLabel: "Download AI/ML and Data resume",
   },
 ] as const;
 
@@ -38,15 +38,13 @@ export function CareerTracks() {
 
         <div className="track-grid">
           {tracks.map((track) => (
-            <article className="track-card" key={track.key}>
+            <article className="track-section" key={track.key}>
               <h3>{track.title}</h3>
               <p>{track.description}</p>
 
-              <div className="track-skills" aria-label={`${track.title} skills`}>
-                {track.skills.map((skill) => (
-                  <span className="track-skill mono" key={skill}>{skill}</span>
-                ))}
-              </div>
+              <p className="track-skills mono" aria-label={`${track.title} skills`}>
+                {track.skills.join(" / ")}
+              </p>
 
               <p className="track-project-label mono">PROJECTS</p>
               <ul className="track-projects">
